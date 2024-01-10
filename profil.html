@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600&family=Bebas+Neue&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="flex">
+            <h1>ENI / Memory</h1>
+            <h3>/ Profil</h3>
+            </div>
+        <ul class="menu">
+            <a href="index.html"><li>Accueil</li></a>
+            <a href="inscription.html"><li>S'inscrire</li></a>
+            <a href="se_connecter.html" id="connectSessionStorage"><li>Se connecter</li></a>
+            <a href="profil.html" id="idSessionStorage"><li class="a-focus">Profil</li></a>
+            <a href="jouer.html"><li>Jouer</li></a>
+        </ul>
+    </nav>
+
+    <div class="padding"></div>
+
+    <div class="block">
+
+        <h2>PROFIL</h2>
+        <div class="profil">
+            <img src="./ressources/question.svg" alt="Point d'inerrogation">
+        </div>
+
+        <div class="section">
+            <label for="utilisateur">Nom d'utilisateur</label>
+            <input type="text" name="id" id="pseudo" placeholder="pseudo" readonly>
+        </div>
+        <div class="section">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="mail" readonly>
+        </div>
+        <div class="section">
+            <label for="choice">Choix du Memory</label>
+            <select name="" id="choice">
+                <option value="a">Animaux animés</option>
+                <option value="b">Alphabet-scrabble</option>
+                <option value="c">Animaux</option>
+                <option value="d">Animaux domestiques</option>
+                <option value="e">Chiens</option>
+                <option value="f">Dinosaures</option>
+                <option value="g">Dinosaures noms</option>
+                <option value="h">Légumes</option>
+            </select>
+            <div class="padding10"></div>
+            <div class="img-contents">
+                <img src="./ressources/animauxAnimes/memory_detail_animaux_animes.png" alt="Animaux animés" id="img-memory">
+            </div>
+        </div>
+        <div class="padding10"></div>
+        <div class="section">
+            <label for="taille">Taille du Memory</label>
+            <select name="" id="taille">
+                <option value="1">4 x 3</option>
+                <option value="2">4 x 5</option>
+                <option value="3">4 x 6</option>
+            </select>
+        </div>
+        <div class="padding"></div>
+        <button id="enregistrer">Enregistrer option</button>
+        <button id="deconnexion">Se déconnecter</button>
+    </div>
+
+    <div class="padding"></div>
+
+    <script src="script_profil.js"></script>
+</body>
+</html>

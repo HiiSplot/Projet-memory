@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600&family=Bebas+Neue&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <div class="flex">
+        <h1>ENI / Memory</h1>
+        <h3>/ Inscription</h3>
+        </div>
+        <ul class="menu">
+            <a href="index.html"><li>Accueil</li></a>
+            <a href="inscription.html"><li class="a-focus">S'inscrire</li></a>
+            <a href="se_connecter.html" id="connectSessionStorage"><li>Se connecter</li></a>
+            <a href="se_connecter.html" id="idSessionStorage"><li>Profil</li></a>
+            <a href="jouer.html"><li>Jouer</li></a>
+        </ul>
+    </nav>
+
+    <div class="padding"></div>
+
+    <div class="block">
+        <h2>INSCRIVEZ-VOUS</h2>
+        <div id="infosManquantes"></div>
+        <div class="section">
+            <label for="">Nom d'utilisateur</label>
+            <input type="text" name="nom-utilisateur" id="nom" placeholder="Au moins 3 caracères minimum">
+            <div class="alert-box">
+                <p id="pseudoError">Le pseudo doit contenir au moins 3 caractères</p>
+                <div class="alerte" id="alerte-pseudo">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <label for="">E-mail</label>
+            <input type="text" name="email" id="email" placeholder="Saisir un format d'e-mail valide">
+            <div class="alert-box">
+                <p id="emailError">Le format de l'e-mail n'est pas valide</p>
+                <div class="alerte" id="alerte-email">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <label for="">Mot de passe</label>
+            <input type="password" name="mdp" id="mdp" placeholder="Au moins 6 caractères, 1 symbole et 1 chiffre">
+            <div class="capciteMdp">
+                    <span id="faible"><p id="paddingWord">faible</p></span>
+                    <span id="moyen"><p id="paddingWord">moyen</p></span>
+                    <span id="fort"><p id="paddingWord">fort</p></span>
+            </div>
+        </div>
+        <div class="section">
+            <label for="">Confirmez votre mot de passe</label>
+            <input type="password" name="confirm" id="confirmation" placeholder="Confirmez le mot de passe">
+            <div class="alert-box">
+                <p id="confirmError">Les mots de passe sont différents</p>
+                <div class="alerte" id="alerte-mdp">
+                </div>
+            </div>
+
+        </div>
+        <div class="padding"></div>
+
+        <button id="creerCompte">Création du compte</button>
+        <button>Annuler</button>
+
+    </div>
+
+    <div class="padding"></div>
+    
+    <script src="script_inscription.js"></script>
+</body>
+</html>
